@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
 
     <name>java-libpst</name>
-    <version>0.9.4</version>
+    <version>0.9.5-VITAM</version>
     <description>A library to read PST files with java, without need for external libraries.</description>
     <url>https://code.google.com/p/java-libpst/</url>
 
@@ -115,7 +115,6 @@
                     <configuration>
                         <mavenExecutorId>forked-path</mavenExecutorId>
                         <useReleaseProfile>false</useReleaseProfile>
-                        <arguments>${arguments} -Psonatype-oss-release</arguments>
                     </configuration>
                 </plugin>
             </plugins>
