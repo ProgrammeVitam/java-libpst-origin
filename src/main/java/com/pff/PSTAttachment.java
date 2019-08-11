@@ -361,4 +361,13 @@ public class PSTAttachment extends PSTObject {
         return this.getStringItem(0x3716);
     }
 
+    /**
+     * Attachment is a contact photo
+     *
+     * @return the boolean
+     */
+    public boolean isContactPhoto() {
+        return this.getBooleanItem(0x7FFF,false);
+    }
+
 }
