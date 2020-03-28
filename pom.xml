@@ -33,7 +33,6 @@
         <developer>
             <name>Richard Johnson</name>
             <email>@rjohnsondev</email>
-            <organization></organization>
         </developer>
     </developers>
 
@@ -91,6 +90,7 @@
                     </execution>
                 </executions>
             </plugin>
+<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -104,6 +104,7 @@
                     </execution>
                 </executions>
             </plugin>
+-->
         </plugins>
 
         <pluginManagement>
@@ -115,6 +116,7 @@
                     <configuration>
                         <mavenExecutorId>forked-path</mavenExecutorId>
                         <useReleaseProfile>false</useReleaseProfile>
+                        <arguments>-Psonatype-oss-release</arguments>
                     </configuration>
                 </plugin>
             </plugins>
